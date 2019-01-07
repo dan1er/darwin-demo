@@ -1,0 +1,13 @@
+<div class="demo-container">
+  <section class="demo-container-common">
+    <h2 *ngIf="loginViewActive">Welcome to </h2>
+    <div class="demo-container-common-logo">
+      <img src="../../../../assets/images/dog.png"
+           width="250">
+      <span>darwin</span>
+    </div>
+  </section>
+  <section class="demo-container-content">
+    <router-outlet></router-outlet>
+  </section>
+</div>

@@ -1,0 +1,44 @@
+@import "../../../../assets/styles/variables";
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 100px;
+
+  h1 {
+    color: $base-color;
+    font-size: 6em;
+    margin: 0;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      margin: 50px auto;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .forgot-password {
+        width: 100%;
+        text-align: right;
+        margin: 10px auto;
+
+        a {
+          color: $black;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="sign-in-container">
+  <h1>Login</h1>
+  <h2>New to darwin? Sign Up <a [routerLink]="['/', 'manual-sign-up']">here</a>.</h2>
+
+  <div class="sign-in-container-content">
+    <button mat-raised-button
+            color="primary">Sign In with LinkedIn
+    </button>
+
+    <span>or</span>
+
+    <form>
+      <app-custom-input label="E-Mail"
+                        placeholder="Enter Email">
+      </app-custom-input>
+
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <app-custom-input label="Password"
+                        placeholder="Enter Password">
+      </app-custom-input>
+
+      <div class="spacer"></div>
+
+      <button mat-raised-button
+              color="primary"
+              (click)="signIn()">Sign In
+      </button>
+    </form>
+  </div>
+</div>

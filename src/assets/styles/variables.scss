@@ -1,0 +1,13 @@
+@import "./theme";
+
+$white: #ffffff;
+$black: #000000;
+$placeholder-color: #afb3b4;
+
+$primary: map-get($demo-theme, primary);
+$accent: map-get($demo-theme, accent);
+$warn: map-get($demo-theme, warn);
+
+$base-color: mat-color($primary);
+$base-accent: mat-color($accent);
+$base-warn: mat-color($warn);

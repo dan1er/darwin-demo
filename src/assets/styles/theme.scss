@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config(
+  $font-family: '-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif'
+);
+
+@include mat-core($custom-typography);
+
+$demo-primary: mat-palette($mat-indigo);
+$demo-accent: mat-palette($mat-pink, A200, A100, A400);
+$demo-warn: mat-palette($mat-red);
+$demo-theme: mat-light-theme($demo-primary, $demo-accent, $demo-warn);
+
+@include angular-material-theme($demo-theme);

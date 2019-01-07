@@ -1,0 +1,42 @@
+<div class="manual-sign-up-container">
+  <div class="manual-sign-up-container-content">
+    <h1>Your Startup</h1>
+    <h2>Tell us more about your role.</h2>
+
+
+    <form>
+      <app-custom-input label="Your Role"
+                        placeholder="Enter Position">
+      </app-custom-input>
+
+      <app-custom-input label="Founded Companies"
+                        placeholder="Enter Founded Companies">
+      </app-custom-input>
+
+      <app-custom-input label="Exits"
+                        placeholder="Enter Exits">
+      </app-custom-input>
+
+      <app-custom-input label="Your Salary"
+                        placeholder="Enter Salary">
+      </app-custom-input>
+
+      <app-custom-input label="Time Commitment"
+                        placeholder="Enter Time Commitment">
+      </app-custom-input>
+
+      <app-custom-input label="Responsibilities"
+                        placeholder="Enter Responsibilities">
+      </app-custom-input>
+
+      <div class="spacer"></div>
+    </form>
+
+    <div class="next-section">
+      <button mat-raised-button
+              color="primary"
+              [routerLink]="['/', 'sign-up']">Next
+      </button>
+    </div>
+  </div>
+</div>

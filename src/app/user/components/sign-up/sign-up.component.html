@@ -1,0 +1,46 @@
+<div class="sign-up-container">
+  <div class="sign-up-container-content">
+    <button mat-raised-button
+            color="primary"
+            class="linked-in-button">Sign In with LinkedIn
+    </button>
+
+    <span>or</span>
+
+    <form>
+      <app-custom-input label="E-Mail"
+                        placeholder="Enter Email">
+      </app-custom-input>
+
+      <app-custom-input label="Role"
+                        placeholder="Enter Role">
+      </app-custom-input>
+
+      <app-custom-input label="First Name"
+                        placeholder="Enter First Name">
+      </app-custom-input>
+
+      <app-custom-input label="Last Name"
+                        placeholder="Enter Last Name">
+      </app-custom-input>
+
+      <app-custom-input label="Password"
+                        placeholder="Enter Password">
+      </app-custom-input>
+
+      <app-custom-input label="Confirm Password"
+                        placeholder="Enter Confirm Password">
+      </app-custom-input>
+
+      <mat-checkbox>I agree with terms and conditions</mat-checkbox>
+
+      <div class="spacer"></div>
+
+      <button mat-raised-button
+              color="primary"
+              (click)="signUp()">
+        Sign Up
+      </button>
+    </form>
+  </div>
+</div>
